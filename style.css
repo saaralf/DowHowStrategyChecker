@@ -1,0 +1,137 @@
+html,
+body {
+    height: 100%;
+}
+
+html,
+body,
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+.grid-container-alles{
+    display: grid;
+    grid-template-columns: 1000px;
+    justify-content: center;
+    background-color: #2c89be;
+    gap:100px;
+    background-image: url("./chart.jpg");
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px 2fr 2fr;
+    grid-template-areas:
+        "header header header"
+        "sidebar content content"
+        "sidebar head1 head2"
+        "sidebar content1 content2"
+        "sidebar content3 content4"
+        "sidebar content5 content6"
+        "footer footer footer"
+    ;
+
+    gap: 10px;
+    grid-template-rows: 50px 50px 50px 1fr 1fr 1fr 50px;
+}
+
+.head {
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: inherit;
+    text-align: center;
+
+}
+.tablesetorder{
+    text-align: left;
+    width: 100%;
+
+}
+.zeigechartbtn {
+    border-radius: 12px;
+    width: 40px;
+
+}
+
+.grid-head1 {
+    grid-area: head1;
+  
+}
+
+.grid-head2 {
+    grid-area: head2;
+}
+
+.grid-header {
+    grid-area: header;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid-sidebar {
+    grid-area: sidebar;
+    height: 100%;
+}
+
+.grid-container {
+ 
+
+}
+
+.grid-content {
+    grid-area: content;
+}
+
+.grid-content1 {
+    grid-area: content1;
+
+}
+
+.grid-content2 {
+    grid-area: content2;
+}
+
+.grid-content3 {
+    grid-area: content3;
+}
+
+.grid-content4 {
+    grid-area: content4;
+ 
+    
+}
+
+.grid-content5 {
+    grid-area: content5;
+}
+
+.grid-content6 {
+    grid-area: content6;
+}
+
+.grid-footer {
+    grid-area: footer;
+}
+
+.grid-elem {
+    padding: 10px;
+    background-color: #2f00ff;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 150%;
+}
+
+.checkvalidertrend {
+    border: 1px;
+
+
+}
+
+.smaltable {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 10px;
+}
